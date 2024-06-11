@@ -2,6 +2,7 @@
 using Components;
 using Events;
 using JetBrains.Annotations;
+using UI;
 using UnityEngine;
 using Zenject;
 
@@ -35,7 +36,12 @@ namespace Handlers
             
             healthComponent.health -= evt.Damage;
             
-            Debug.Log(healthComponent.health);
+            if (!evt.TargetEntity.TryGetComponent(out DamageComponent damageComponent))
+                return;
+
+            var damage = damageComponent.damage;
+
+            evt.TargetEntity.GetComponent<HeroView>().SetStats($"{damage} / {healthComponent.health}");
             
             if (healthComponent.health<=0)
                 _eventBus.RaiseEvent(new DestroyEvent(evt.TargetEntity));

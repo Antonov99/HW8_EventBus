@@ -398,6 +398,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c934359685ec4396ad41ff805cf3a000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _components
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Components.IComponent, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|Components.HealthComponent, Assembly-CSharp
+    - Name: health
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|Components.DamageComponent, Assembly-CSharp
+    - Name: damage
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Components.TeamComponent, Assembly-CSharp
+    - Name: team
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &383512545822542975
 GameObject:
   m_ObjectHideFlags: 0

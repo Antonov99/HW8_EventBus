@@ -2,7 +2,6 @@
 using Components;
 using Events;
 using JetBrains.Annotations;
-using UnityEngine;
 using Zenject;
 
 namespace Handlers
@@ -34,6 +33,7 @@ namespace Handlers
                 return;
             _eventBus.RaiseEvent(new DealDamageEvent(evt.TargetEntity, damageComponent2.damage));
             _eventBus.RaiseEvent(new DealDamageEvent(evt.AttackerEntity, damageComponent1.damage));
+            
         }
     }
 }

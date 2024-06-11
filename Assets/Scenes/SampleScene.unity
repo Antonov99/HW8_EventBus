@@ -224,11 +224,15 @@ PrefabInstance:
       objectReference: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
+      value: '"path":"_components","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[Components.IComponent,
+        Assembly-CSharp]], mscorlib","$rlength":3,"$rcontent":[{"$id":1,"$type":"Components.HealthComponent,
+        Assembly-CSharp","health":22},{"$id":2,"$type":"Components.DamageComponent,
+        Assembly-CSharp","damage":6},{"$id":3,"$type":"Components.TeamComponent,
+        Assembly-CSharp","team":false}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[1]
@@ -254,6 +258,11 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModifications.Array.data[5]
       value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
         Assembly-CSharp","team":false}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[6]
+      value: '"path":"_components.[2].team","value":{"$id":0,"$type":"System.Boolean,
+        mscorlib",false}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
@@ -382,7 +391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
+      value: '"path":"_components","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[Components.IComponent,
+        Assembly-CSharp]], mscorlib","$rlength":3,"$rcontent":[{"$id":1,"$type":"Components.HealthComponent,
+        Assembly-CSharp","health":50},{"$id":2,"$type":"Components.DamageComponent,
+        Assembly-CSharp","damage":2},{"$id":3,"$type":"Components.TeamComponent,
+        Assembly-CSharp","team":true}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[1]
@@ -407,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[5]
       value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
-        Assembly-CSharp","team":false}'
+        Assembly-CSharp","team":true}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[6]
@@ -617,7 +630,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
+      value: '"path":"_components","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[Components.IComponent,
+        Assembly-CSharp]], mscorlib","$rlength":3,"$rcontent":[{"$id":1,"$type":"Components.HealthComponent,
+        Assembly-CSharp","health":30},{"$id":2,"$type":"Components.DamageComponent,
+        Assembly-CSharp","damage":30},{"$id":3,"$type":"Components.TeamComponent,
+        Assembly-CSharp","team":true}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[1]
@@ -642,7 +659,7 @@ PrefabInstance:
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[5]
       value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
-        Assembly-CSharp","team":false}'
+        Assembly-CSharp","team":true}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[6]
@@ -1475,36 +1492,17 @@ PrefabInstance:
       objectReference: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"_components.[0]","value":{"$id":0,"$type":"Components.HealthComponent,
-        Assembly-CSharp","health":32}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
       value: '"path":"_components.[0].health","value":{"$id":0,"$type":"System.Int32,
         mscorlib",32}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_components.[1]","value":{"$id":0,"$type":"Components.DamageComponent,
-        Assembly-CSharp","damage":8}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      propertyPath: serializationData.PrefabModifications.Array.data[1]
       value: '"path":"_components.[1].damage","value":{"$id":0,"$type":"System.Int32,
         mscorlib",8}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[5]
-      value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
-        Assembly-CSharp","team":false}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
@@ -1772,6 +1770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d0cb6b257d5e948925732101a0031f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiService: {fileID: 1854234147}
 --- !u!1 &1854234142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,11 +2031,15 @@ PrefabInstance:
       objectReference: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
+      value: '"path":"_components","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[Components.IComponent,
+        Assembly-CSharp]], mscorlib","$rlength":3,"$rcontent":[{"$id":1,"$type":"Components.HealthComponent,
+        Assembly-CSharp","health":25},{"$id":2,"$type":"Components.DamageComponent,
+        Assembly-CSharp","damage":10},{"$id":3,"$type":"Components.TeamComponent,
+        Assembly-CSharp","team":false}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[1]
@@ -2062,6 +2065,11 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModifications.Array.data[5]
       value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
         Assembly-CSharp","team":false}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[6]
+      value: '"path":"_components.[2].team","value":{"$id":0,"$type":"System.Boolean,
+        mscorlib",false}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
@@ -2130,7 +2138,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  uiService: {fileID: 1854234147}
+  _queueManager:
+    rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1001 &383512544509087720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2140,7 +2154,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1406148263, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 383512545093365542, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: m_Sprite
@@ -2280,36 +2294,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_components","length":3'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"_components.[0]","value":{"$id":0,"$type":"Components.HealthComponent,
-        Assembly-CSharp","health":50}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
       value: '"path":"_components.[0].health","value":{"$id":0,"$type":"System.Int32,
         mscorlib",50}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_components.[1]","value":{"$id":0,"$type":"Components.DamageComponent,
-        Assembly-CSharp","damage":3}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      propertyPath: serializationData.PrefabModifications.Array.data[1]
       value: '"path":"_components.[1].damage","value":{"$id":0,"$type":"System.Int32,
         mscorlib",3}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[5]
-      value: '"path":"_components.[2]","value":{"$id":0,"$type":"Components.TeamComponent,
-        Assembly-CSharp","team":false}'
       objectReference: {fileID: 0}
     - target: {fileID: 5493122316043066238, guid: 291ab9f483432480c8815884e98cd0a0, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size

@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Components;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
-using UnityEngine;
 
-namespace DefaultNamespace
+namespace GameEngine
 {
     public class HeroEntity : SerializedMonoBehaviour
     {
         [OdinSerialize]
-        private List<object> _components = new();
+        private List<IComponent> _components = new();
 
         public new bool TryGetComponent<T>(out T component)
         {

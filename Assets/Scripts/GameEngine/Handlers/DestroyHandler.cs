@@ -1,8 +1,7 @@
 ﻿using System;
 using Events;
+using GameEngine;
 using JetBrains.Annotations;
-using UI;
-using UnityEngine;
 using Zenject;
 
 namespace Handlers
@@ -11,11 +10,13 @@ namespace Handlers
     public class DestroyHandler: IInitializable, IDisposable
     {
         private EventBus _eventBus;
+        private QueueManager _queueManager;
 
         [Inject]
-        public void Construct(EventBus eventBus)
+        public void Construct(EventBus eventBus, QueueManager queueManager)
         {
             _eventBus = eventBus;
+            _queueManager = queueManager;
         }
 
         void IInitializable.Initialize()
@@ -31,6 +32,7 @@ namespace Handlers
         private void OnDestroy(DestroyEvent evt)
         {
             evt.HeroEntity.gameObject.SetActive(false);
+            _queueManager.OnDead(evt.HeroEntity);
         }
     }
 }
